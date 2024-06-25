@@ -40,7 +40,3 @@ eureka:
   instance:
     preferIpAddress: false
     hostname: ${HOSTNAME:localhost}
-    non-secure-port-enabled: true
-    secure-port-enabled: false
-    non-secure-port: ${server.port}
-    secure-port: 443
