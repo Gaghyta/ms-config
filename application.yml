@@ -1,0 +1,17 @@
+server:
+  port: ${PORT:8888}
+
+spring:
+  application:
+    name: ${APP_NAME:ms-configserver}
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Gaghyta/ms-configserver
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
